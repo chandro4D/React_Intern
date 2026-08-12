@@ -1,0 +1,29 @@
+.nav{
+    color: white;
+    
+    
+}
+.nav1{
+    background-color: #162D50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav2{
+    display: flex;
+    gap: 1rem;
+}
+.home1{
+    display: flex;
+    gap: 2rem;
+   
+}
+
+
+.footer{
+    background-color: #162D50;
+    color: white;
+    align-items: center;
+    padding: 1rem;
+}
