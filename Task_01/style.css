@@ -1,29 +1,266 @@
-.nav{
-    color: white;
-    
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.nav1{
-    background-color: #162D50;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+
+.nav {
+  color: white;
+  font-size: 20px;
 }
-.nav2{
-    display: flex;
-    gap: 1rem;
+.web {
+  font-size: 30px;
 }
-.home1{
-    display: flex;
-    gap: 2rem;
-   
+.nav1 {
+  background-color: #162d50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  height: 120px;
+}
+.nav2 {
+  display: flex;
+  gap: 20px;
+  margin-right: 100px;
+  font-size: 24px;
+  font-weight: 300px;
+}
+
+/* For Underline */
+.nav3 {
+  color: yellow;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+.nav3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 90px;
+  height: 1px;
+  background: yellow;
+}
+.nav3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1px;
+  width: 50px;
+  height: 4px;
+  background: yellow;
+}
+
+/* For Home Section */
+.home1 {
+  background-color: #edf6fc;
+  height: 450px;
+  margin-bottom: 26px;
+  padding-top: 60px;
+  padding-left: 80px;
+}
+.home2 {
+  display: flex;
+  gap: 2rem;
+  padding-top: 20px;
+}
+.img {
+  border-radius: 8px;
+  width:300px;
+  height: 300px;
+}
+.home3 {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-size: 40px;
+}
+.home4 {
+  padding-left: 50px;
+}
+.home5 {
+  font-size: 30px;
+}
+.btn1 {
+  background-color: #1c4b98;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+
+/* For About Section */
+.about1 {
+  background-color: #f2f9f5;
+  height: 220px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 40px;
+  padding-left: 50px;
+  border-radius: 6px;
+}
+.about1 h1 {
+  color: #34714e;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.about1 p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* For Icons */
+.fa-circle-user {
+  color: #4a8a5d;
+  font-size: 40px;
+  margin-right: 14px;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  color: white;
+  font-size: 18px;
+}
+
+.skills {
+  background: #2859a6;
+  margin-right: 12px;
 }
 
 
-.footer{
-    background-color: #162D50;
-    color: white;
-    align-items: center;
-    padding: 1rem;
+.education {
+  background: #5b3fa8;
+  margin-right: 12px;
+}
+
+.contact {
+  background: #d26900;
+  margin-right: 12px;
+}
+
+/* For Skills Section */
+.skills1 {
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.skills1 ul {
+  padding-left: 30px;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+/* For Education Section */
+.edu1 {
+  padding-left: 100px;
+  padding-top: 50px;
+}
+/* For Contact Section */
+.contact1 {
+  padding-left: 50px;
+  padding-top: 30px;
+  background-color: #faf7f2;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+.contact1 form {
+  font-size: 24px;
+  margin-left: 60px;
+}
+.contact1 textarea {
+  width: 400px;
+  height: 80px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding-left: 10px;
+  margin-left: 3px;
+}
+
+.input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+.label {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.label1 {
+  margin-left: 0px;
+}
+
+/* For Table */
+.education-table {
+    width: 1270px;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    overflow: hidden;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Table Header */
+.education-table thead {
+    background-color: #eeeeff;
+}
+
+.education-table th {
+    text-align: left;
+    padding: 20px 32px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #222;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Table Body */
+.education-table td {
+    padding: 18px 32px;
+    color: #222;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.foot {
+  background-color: #162d50;
+  height: 80px;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot1 {
+  font-size: 24px;
 }

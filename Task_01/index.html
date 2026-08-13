@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav class="nav">
         <div class="nav1">
-          <div style="margin-left: 100px">
+          <div>
             <h1>Chandra Shekhor</h1>
-            <h2>Web Developer</h2>
+            <p class="web">Web Developer</p>
           </div>
-          <div class="nav2" style="margin-right: 100px">
-            <h1>Home</h1>
-            <h1>About</h1>
-            <h1>Skills</h1>
-            <h1>Education</h1>
-            <h1>Contact</h1>
+          <div class="nav2">
+            <p class="nav3">Home</p>
+            <p>About</p>
+            <p>Skills</p>
+            <p>Education</p>
+            <p>Contact</p>
           </div>
         </div>
       </nav>
@@ -27,36 +31,51 @@
     <main>
       <div>
         <!-- Home Section -->
-        <div>
-          <h1>Home</h1>
-          <div class="home1">
+        <div class="home1">
+          <h1 style="color: #162d50">Home</h1>
+          <div class="home2">
             <div>
               <img
-                src="./chandra.jpeg"
+                class="img"
+                src="./chandra.png"
                 alt="Image Is Comming..."
-                width="300px"
-                height="300px"
+                
               />
             </div>
-            <div>
-              <h1>Hello, I am John Smith.</h1>
-              <h3>I am a Web Developer.</h3>
-              <button>Contact Me</button>
+            <div class="home4">
+              <p class="home3">
+                Hello, I am
+                <b><span style="color: #162d50">Chandra Shekhor</span></b
+                >.
+              </p>
+              <p class="home5">I am a Web Developer.</p>
+              <button class="btn1">Contact Me</button>
             </div>
           </div>
         </div>
         <!-- About Section -->
-        <div>
-          <h1>About Me</h1>
+        <div class="about1">
+          <div style="display: flex">
+            <i class="fa-solid fa-circle-user"></i>
+            <h1>About Me</h1>
+          </div>
+
           <p>
-            I love to create simple and useful websites. I am learning HTML and
-            CSS. My goal is to become a professional About skills Education Web
-            De veloper.
+            I love to create simple and useful websites. I am learning <br />
+            HTML and CSS. My goal is to become a professional About skills
+            Education <br />
+            Web De veloper.
           </p>
         </div>
         <!-- Skills Section -->
-        <div>
-          <h1>Skills</h1>
+        <div class="skills1">
+          <div style="display: flex">
+            <div class="icon skills">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h1 style="color: #2859a6">Skills</h1>
+          </div>
+
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -65,9 +84,15 @@
           </ul>
         </div>
         <!-- Education Section -->
-        <div>
-          <h1>Education</h1>
-          <table>
+        <div class="edu1">
+          <div style="display: flex">
+            <div class="icon education">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h1 style="color: #5b3fa8">Education</h1>
+          </div>
+
+          <table class="education-table" style="margin-right: 200px;">
             <thead>
               <th>Degree</th>
               <th>Institution</th>
@@ -76,66 +101,106 @@
             </thead>
             <tbody>
               <tr>
-                <td>Bachelor of Science in Computer Science</td>
-                <td>University of Example</td>
-                <td>2020 - 2024</td>
-                <td>First Class Honors</td>
+                <td>BSc in CSE</td>
+                <td>NUBTK</td>
+                <td>2023 - 2027</td>
+                <td>3.70(Ongoing)</td>
               </tr>
               <tr>
                 <td>Hsc</td>
                 <td>Khulna Govt College</td>
                 <td>2020</td>
-                <td>GPA: 3.8/4.0</td>
+                <td>GPA: 4.67/5.0</td>
               </tr>
               <tr>
                 <td>Ssc</td>
                 <td>Bedkashi Collegiate School</td>
                 <td>2018</td>
-                <td>GPA: 3.8/4.0</td>
+                <td>GPA: 4.67/5.0</td>
               </tr>
             </tbody>
           </table>
         </div>
         <!-- Contact Section -->
-        <div>
-          <h1>Contact Me</h1>
-          <form >
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <label >Gender:</label>
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female" required>
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other" required>
-            <label for="other">Other</label>
-            <br>
-            <label for="skills">Skills:</label>
-            <input type="checkbox" id="html" name="skills" value="html">
-            <label for="html">HTML</label>
-            <input type="checkbox" id="css" name="skills" value="css">
-            <label for="css">CSS</label>
-            <input type="checkbox" id="javascript" name="skills" value="javascript">
-            <label for="javascript">JavaScript</label>
-            <input type="checkbox" id="React" name="skills" value="React">
-            <label for="React">React</label>
+        <div class="contact1">
+          <div style="display: flex">
+            <div class="icon contact">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h1 style="color: #d26900">Contact Me</h1>
+          </div>
 
-            <br>
-            <button type="submit">Submit</button>
+          <br />
+          <form>
+            <label  class="label" for="name">Name:</label>
+            <input class="input" type="text" id="name" name="name" required />
+            <br />
+            <br />
+            <label class="label" for="email">Email:</label>
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <br />
+            <br />
+            <label class="label1" for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br />
+            <br />
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
+            <label for="female">Female</label>
+            <input
+              type="radio"
+              id="other"
+              name="gender"
+              value="other"
+              required
+            />
+            <label for="other">Other</label>
+            <br />
+            <br />
+            <label for="skills">Skills:</label>
+            <input type="checkbox" id="html" name="skills" value="html" />
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css" />
+            <label for="css">CSS</label>
+            <input
+              type="checkbox"
+              id="javascript"
+              name="skills"
+              value="javascript"
+            />
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="React" name="skills" value="React" />
+            <label for="React">React</label>
+            <br />
+            <br />
+            <button
+              class="btn1"
+              style="margin-bottom: 20px; background-color: #1c4b98"
+              type="submit"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </div>
     </main>
     <footer>
       <div class="foot">
-        <h1>Copyright 2024 Chandra Shekhor. All rights reserved.</h1>
+        <p class="foot1">© 2026 Chandra Shekhor All rights reserved.</p>
       </div>
     </footer>
   </body>
