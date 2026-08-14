@@ -1,0 +1,25 @@
+.task_02 {
+  text-align: center;
+  font-size: 48;
+  color: blueviolet;
+}
+.btn1 {
+  color: dodgerblue;
+  background: #f5f5f6;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  width: 120px;
+  height: 45px;
+  margin-top: 30px;
+  border-radius: 6px;
+  font-weight: 900px;
+  box-shadow: 0 3px 0px slategray;
+}
+.heading {
+  color: #1b2755;
+  font-size: 24px;
+}
+.para {
+  color: #6b7280;
+}
