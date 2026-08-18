@@ -7,7 +7,6 @@
 }
 
 .Benefits_Section {
-  color: dodgerblue;
   background: #f5f5f6;
   border: none;
   /* padding: 10px 20px; */
@@ -19,7 +18,7 @@
   justify-content: center;
   /* margin-top: 30px; */
   border-radius: 6px;
-  font-weight: 700px;
+  font-weight: 700;
   /* border-bottom: 3px solid slategray; */
   box-shadow: 0 3px 0px slategray;
 }
