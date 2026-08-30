@@ -3,7 +3,7 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 const TopBar = () => {
   return (
     <div className="bg-[#000C22]">
-      <div className="flex justify-between py-2 text-[#CCCED3] max-w-[1100px] mx-auto ">
+      <div className="flex justify-between py-2 text-[#CCCED3] max-w-[1200px] mx-auto ">
         <div className="flex gap-6">
           <div className="flex gap-2 justify-center items-center">
             <MapPin className="text-[#FFAA19] size-5 " />
