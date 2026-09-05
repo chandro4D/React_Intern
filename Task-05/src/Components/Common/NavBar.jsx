@@ -8,10 +8,11 @@ const NavBar = () => {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Prices", path: "/prices" },
-    { name: "Team", path: "/team" },
-    { name: "Task 4", path: "/task-4" },
+    { name: "Contact", path: "/contact" },
+    // { name: "Services", path: "/services" },
+    // { name: "Prices", path: "/prices" },
+    // { name: "Team", path: "/team" },
+    // { name: "Task 4", path: "/task-4" },
   ];
 
   return (
@@ -46,8 +47,13 @@ const NavBar = () => {
                 {item}
               </p>
             ))} */}
-            <div className="bg-[#FFAA19] text-base py-2 text-black font-medium hover:bg-amber-50 px-5 rounded-lg">
+            
+            {/* <div className="bg-[#FFAA19] text-base py-2 text-black font-medium hover:bg-amber-50 px-5 rounded-lg">
               <button>Get a Quote</button>
+            </div> */}
+
+            <div className="bg-[#FFAA19] ml-[150px] text-base py-2 text-black font-medium hover:bg-amber-50 px-5 rounded-lg">
+              <button>Login</button>
             </div>
           </div>
           <div className="md:hidden" onClick={() => setShow(!show)}>
