@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" border-t border-gray-100">
+        <div className=" border-t border-gray-600">
           <p className="text-center text-sm text-gray-500 py-5">
             &copy; 2026 Cepair. All rights reserved.
           </p>

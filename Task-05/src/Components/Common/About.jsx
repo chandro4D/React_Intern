@@ -1,5 +1,5 @@
-import { Check, Dot } from "lucide-react";
-import { Users, Target, Heart } from "lucide-react";
+import { Check, Dot,Users, Target, Heart } from "lucide-react";
+
 const About = () => {
   return (
     <div>
@@ -7,7 +7,7 @@ const About = () => {
         {/* Top section */}
         <div className="px-16 py-20">
           <div className="flex items-center justify-between max-w-6xl mx-auto gap-16">
-            {/* Left: Text content */}
+            {/* Left content */}
             <div className="max-w-xl">
               <p className="text-gray-400 text-sm tracking-widest mb-4">
                 ABOUT US
@@ -26,22 +26,21 @@ const About = () => {
               </p>
             </div>
 
-            {/* Right: Image placeholder */}
-            <div className="flex-shrink-0">
+            {/* Right Content */}
+            <div className="">
               <img
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80"
-                alt="Team collaborating"
-                className="w-[450px] h-[280px] object-cover rounded-md shadow-sm"
+                className="w-[500px] h-[300px]  rounded-md shadow-sm"
               />
             </div>
           </div>
         </div>
 
-        {/* Bottom section: Mission / Vision / Values */}
+        {/* Bottom section */}
         <div className="bg-gray-50 px-16 py-14">
           <div className="grid grid-cols-3 gap-12 max-w-6xl mx-auto">
             {/* Our Mission */}
-            <div className="flex items-start gap-4">
+            <div className="flex  gap-4">
               <div className="w-14 h-14 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
                 <Users className="text-gray-600" size={22} />
               </div>
@@ -54,7 +53,7 @@ const About = () => {
             </div>
 
             {/* Our Vision */}
-            <div className="flex items-start gap-4">
+            <div className="flex  gap-4">
               <div className="w-14 h-14 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
                 <Target className="text-gray-600" size={22} />
               </div>
@@ -68,7 +67,7 @@ const About = () => {
             </div>
 
             {/* Our Values */}
-            <div className="flex items-start gap-4">
+            <div className="flex  gap-4">
               <div className="w-14 h-14 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
                 <Heart className="text-gray-600" size={22} />
               </div>
@@ -86,7 +85,6 @@ const About = () => {
 
 
       {/*  */}
-
 
       <div className="max-w-[1200px] mx-auto py-24 flex gap-10">
         {/* left side element */}

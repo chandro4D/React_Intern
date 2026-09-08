@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <div className="bg-gray-100 px-16 py-20">
       <div className="flex items-center justify-between max-w-6xl mx-auto gap-16">
-        {/* Left: Text content */}
+        {/* Left content */}
         <div className="max-w-xl">
           <p className="text-gray-400 text-sm tracking-widest mb-4">
             LEARN . PRACTICE . GROW
@@ -29,12 +29,12 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right: Image placeholder */}
-        <div className="flex-shrink-0">
+        {/* Right Content */}
+        <div className="">
           <img
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80"
-            alt="Students learning together"
-            className="w-[450px] h-[320px] object-cover rounded-md shadow-sm"
+            
+            className="w-[460px] h-[320px] rounded-md shadow-sm"
           />
         </div>
       </div>
